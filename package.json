@@ -1,0 +1,12 @@
+{
+  "name": "nieta-proxy",
+  "version": "1.0.0",
+  "description": "捏 Ta API 代理 - Vercel 云函数（带缓存）",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/postgres": "^0.8.0"
+  }
+}
