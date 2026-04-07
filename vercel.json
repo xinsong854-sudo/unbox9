@@ -1,15 +1,11 @@
 {
   "version": 2,
   "functions": {
-    "api/proxy.js": {
-      "memory": 1024,
-      "maxDuration": 30
-    }
+    "api/proxy.js": { "memory": 1024, "maxDuration": 30 },
+    "api/catch.js": { "memory": 1024, "maxDuration": 30 }
   },
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/proxy.js"
-    }
+    { "src": "/api/catch(/.*)?", "dest": "/api/catch.js" },
+    { "src": "/api/(.*)", "dest": "/api/proxy.js" }
   ]
 }
